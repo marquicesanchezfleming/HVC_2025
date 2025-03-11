@@ -1,0 +1,5 @@
+Flatten time series spectrum, kinda like residual
+Do this for each indivual spectra, not overall dynamic spectra
+Look for anything above a certain SNR and note the frequency they occur at 
+
+create algorith that goes through every single spectra, calculates its SNR, and basically anyhting funny with it
