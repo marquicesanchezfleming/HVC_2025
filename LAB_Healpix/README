@@ -1,0 +1,66 @@
+HEALPIX resampling of Leiden/Argentine/Bonn (LAB) Survey of Galactic
+HI (Kalberla+ 2005)
+---------------------------------------------------------------------
+
+These are the data that were used in Land & Slosar, arXiv:0706.1703
+and given for public use through LAMBDA.  Description of the survey in
+the original README is as follows:
+The LAB survey contains the final data release of observations of
+21-cm emission from Galactic neutral hydrogen over the entire sky,
+merging the Leiden/Dwingeloo Survey (LDS: Hartmann & Burton 1997,
+Cat. VIII/54) of the sky north of -30{deg} with the Instituto
+Argentino de Radioastronomia Survey (IAR: Arnal et al.
+2000A&AS..142...35A and Bajaja et al. 2005, Cat. VIII/75) of the sky
+south of -25{deg}. The angular resolution of the combined material is
+HPBW ~ 0.6{deg}. The LSR velocity coverage spans the interval -450
+km/s to +400 km/s, at a resolution of 1.3km/s. The data were corrected
+for stray radiation at the Institute for Radioastronomy of the
+University of Bonn, refining the original correction applied to the
+LDS. The rms brightness-temperature noise of the merged database is
+0.07-0.09 K. Residual errors in the profile wings due to defects in
+the correction for stray radiation are for most of the data below a
+level of 20-40 mK. It would be necessary to construct a telescope with
+a main beam efficiency of {eta}MB>99% to achieve the same accuracy.
+The merged and refined material entering the LAB Survey of Galactic H
+I is intended to be a general resource useful to a wide range of
+studies of the physical and structural characteristices of the
+Galactic interstellar environment. The LAB Survey is the most
+sensitive Milky Way H I survey to date, with the most extensive
+coverage both spatially and kinematically.
+
+
+The data were resampled on NSIDE=512 healpix grid using nearest
+neighbour pixel. The NSIDE=512 with approx 0.1 sq deg pixels is
+probably oversampling the original data, which is stored in
+approximately 0.25 sq deg pixels. The healpix map is a two-channel
+map: the first channel contains the averaged values of corresponding
+pixels from the LAB data, while the second channel is weight, i.e. the
+number of original LAB pixels (i.e. velocity slices) that went into
+that particular healpix pixel.  With exception of thin velocity
+slices, the sky coverage is pretty uniform.
+
+The naming convention is as follows: 
+LAB_fullvel.fits - the entire velocity range
+LAB_HV.fits  -30 .. 30 km/s, low velocity
+LAB_MV.fits  -100 .. -30 km/s, intermediate velocity
+LAB_LV.fits  -500 .. -100 km/s, high velocity
+LAB-cutXXX.fits  XXX .. XXX+10 km/s range. Note that number is the lower limit not the mean.
+
+Please do not hesitate to contact us if you require any further information. 
+
+In addition to the standard healpix acknowledgement, you must also
+cite the original data:
+
+Kalberla P.M.W., Burton W.B., Hartmann D., Arnal E.M., Bajaja E.,
+Morras R., Poeppel W.G.L. Leiden/Argentine/Bonn (LAB) Survey of Galactic HI. 
+Astron. Astrophys., 440, 775 (2005) 
+
+Citation to our paper is also appreciated: 
+
+Land, K. and Slosar,A. Correlation between galactic HI and the Cosmic
+Microwave Background, arXiv:0706.1703, PRD in print
+
+
+Good luck!
+
+Anze Slosar & Kate Land
